@@ -6,13 +6,14 @@ import { MaterialIcons } from "@expo/vector-icons";
 const Icon = ({ label, focus }) => {
   switch (label) {
     case 'Home':
-      return focus ? <Ionicons name="home" size={24} color="#00512C" /> : <Ionicons name="home-outline" size={24} color="black" />;
+      return focus ? <Ionicons name="home" size={24} color="#00512C" /> : <Ionicons name="home-outline" size={24} color="#00512C" />;
     case 'Favorite':
-      //
+      return focus ? <MaterialIcons name="favorite-border" size={24} color="#00512C" /> : <MaterialIcons name="favorite" size={24} color="#00512C" />;
     case 'Cart':
-      //
+      return focus ? <Ionicons name="cart" size={24} color="#00512C" /> : <Ionicons name="cart-outline" size={24} color="#00512C" />;
     case 'Profile':
-      //
+      return focus ? <Ionicons name="people-sharp" size={24} color="#00512C" /> : <Ionicons name="people-outline" size={24} color="#00512C" />
+
   }
   return <MaterialIcons name="favorite-border" size={24} color="#00512C" />;
 }
