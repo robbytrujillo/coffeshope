@@ -17,7 +17,7 @@ const Splashscreen = () => {
             <Text style={{ fontSize: 14, color: 'white', textAlign: 'center', paddingHorizontal: 90 }}>The best grain, the finest roas, the most powerful flavor.</Text>
           </View>
           <TouchableOpacity activeOpacity={ 0.7 } style={{ backgroundColor: '#00512C', alignItems: 'center', paddingHorizontal: 30, paddingVertical: 15, borderRadius: 30, marginHorizontal: 60 }}>
-            <Text>Get started</Text>
+            <Text style={{ fontSize: 16, fontWeight: 600, color: white }}>Get started</Text>
           </TouchableOpacity>
         </ImageBackground>
     </View>
