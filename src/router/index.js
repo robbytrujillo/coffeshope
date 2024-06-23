@@ -32,4 +32,4 @@ const Router = () => {
 
 export default Router;
 
-const styles = StyleSheet.create({});
+// const styles = StyleSheet.create({});
