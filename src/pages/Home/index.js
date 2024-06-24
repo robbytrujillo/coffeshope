@@ -1,6 +1,7 @@
 import { StyleSheet, Text, View, Image, TouchableOpacity } from "react-native";
 import React from "react";
-import { Photoprofile, Location, Notification } from "../../assets/";
+import { Photoprofile, Location, Notification, Search, Filter } from "../../assets/";
+import { TextInput } from "react-native-gesture-handler";
 // import { TouchableOpacity } from "react-native-gesture-handler";
 
 const Home = () => {
@@ -19,6 +20,19 @@ const Home = () => {
           <Image source={Notification} />
         </TouchableOpacity>
       </View>
+      {/* End TopMenu */}
+
+      {/* Search */}
+      <View style={{ flexDirection: "row", backgroundColor: "white", marginHorizontal: 30, paddingHorizontal: 20, paddingVertical: 5, borderRadius: 30, justifyContent: "space-between", alignItems: "center", marginTop: 30 }}>
+        <View style={{ flexDirection: "row", alignItems: "center" }}>
+          <Image source={Search} />
+          <TextInput placeholder="Search Coffee..." style={{ marginLeft: '25'}}></TextInput>
+        </View>
+        <View>
+          <Image source={Filter} />
+        </View>
+      </View>
+      {/* End Search */}
     </View>
   );
 };
