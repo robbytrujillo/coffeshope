@@ -1,26 +1,25 @@
-import { StyleSheet, Text, View, TouchableOpacity } from 'react-native'
-import React from 'react'
+import { StyleSheet, Text, View, TouchableOpacity } from "react-native";
+import React from "react";
 import { Ionicons } from "@expo/vector-icons";
 import { MaterialIcons } from "@expo/vector-icons";
 
 const Icon = ({ label, focus }) => {
   switch (label) {
-    case 'Home':
+    case "Home":
       return focus ? <Ionicons name="home" size={24} color="#00512C" /> : <Ionicons name="home-outline" size={24} color="#00512C" />;
-    case 'Favorite':
-      return focus ? <MaterialIcons name="favorite-border" size={24} color="#00512C" /> : <MaterialIcons name="favorite" size={24} color="#00512C" />;
-    case 'Cart':
+    case "Favorite":
+      return focus ? <MaterialIcons name="favorite" size={24} color="#00512C" /> : <MaterialIcons name="favorite-border" size={24} color="#00512C" />;
+    case "Cart":
       return focus ? <Ionicons name="cart" size={24} color="#00512C" /> : <Ionicons name="cart-outline" size={24} color="#00512C" />;
-    case 'Profile':
-      return focus ? <Ionicons name="people-sharp" size={24} color="#00512C" /> : <Ionicons name="people-outline" size={24} color="#00512C" />
-
+    case "Profile":
+      return focus ? <Ionicons name="people-sharp" size={24} color="#00512C" /> : <Ionicons name="people-outline" size={24} color="#00512C" />;
   }
   return <MaterialIcons name="favorite-border" size={24} color="#00512C" />;
-}
+};
 
 const ButtonTabs = ({ state, descriptors, navigation }) => {
   return (
-    <View style={{ flexDirection: "row", backgroundColor: "white", paddingVertical: 15, paddingHorizontal: 50, justifyContent: "space-between"  }}>
+    <View style={{ flexDirection: "row", backgroundColor: "white", paddingVertical: 15, paddingHorizontal: 50, justifyContent: "space-between" }}>
       {state.routes.map((route, index) => {
         const { options } = descriptors[route.key];
         const label = options.tabBarLabel !== undefined ? options.tabBarLabel : options.title !== undefined ? options.title : route.name;
@@ -57,7 +56,7 @@ const ButtonTabs = ({ state, descriptors, navigation }) => {
             onLongPress={onLongPress}
             // style={{ flex: 1 }}
           >
-            <Icon label = { label } focus = { isFocused }/>
+            <Icon label={label} focus={isFocused} />
             {/* <Text style={{ color: isFocused ? "#673ab7" : "#222" }}>{label}</Text> */}
           </TouchableOpacity>
         );
@@ -66,6 +65,6 @@ const ButtonTabs = ({ state, descriptors, navigation }) => {
   );
 };
 
-export default ButtonTabs
+export default ButtonTabs;
 
-const styles = StyleSheet.create({})
+const styles = StyleSheet.create({});

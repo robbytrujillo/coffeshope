@@ -1,10 +1,16 @@
-import { StyleSheet, Text, View } from 'react-native'
+import { StyleSheet, Text, View, Image } from 'react-native'
 import React from 'react'
+import { Photoprofile } from '../../assets/images'
 
 const Home = () => {
   return (
-    <View>
-      <Text>Home</Text>
+    <View style={{ flex: 1 }}>
+      {/* <Text>Home</Text> */}
+      <View>
+        <View>
+          <Image source={Photoprofile} />
+        </View>
+      </View>
     </View>
   )
 }
