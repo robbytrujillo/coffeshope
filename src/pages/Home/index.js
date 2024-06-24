@@ -43,7 +43,7 @@ const Home = () => {
         </View>
         <ScrollView horizontal={true}>
           {/* menu */}
-          <TouchableOpacity activeOpacity={0.7} style={{ backgroundColor: "#00582F", paddingVertical: 5, paddingHorizontal: 5, flexDirection: "row", alignItems: "center", borderRadius: 30 }}>
+          <TouchableOpacity activeOpacity={0.7} style={{ backgroundColor: "#00582F", paddingVertical: 5, paddingHorizontal: 5, flexDirection: "row", alignItems: "center", borderRadius: 30, marginHorizontal: 10 }}>
             <Image source={Coffee} />
             <Text style={{ color: "white", marginLeft: 5 }}>Cappucino</Text>
           </TouchableOpacity>
@@ -55,6 +55,22 @@ const Home = () => {
             <Text style={{ color: "#00582F", marginLeft: 5 }}>Cappucino</Text>
           </TouchableOpacity>
           {/* end menu */}
+          
+          {/* menu */}
+          <TouchableOpacity activeOpacity={0.7} style={{ backgroundColor: "white", paddingVertical: 5, paddingHorizontal: 5, flexDirection: "row", alignItems: "center", borderRadius: 30, elevation: 2, shadowColor: "black" }}>
+            <Image source={ GreenCoffee } />
+            <Text style={{ color: "#00582F", marginLeft: 5 }}>Cappucino</Text>
+          </TouchableOpacity>
+          {/* end menu */}
+          
+          {/* menu */}
+          <TouchableOpacity activeOpacity={0.7} style={{ backgroundColor: "white", paddingVertical: 5, paddingHorizontal: 5, flexDirection: "row", alignItems: "center", borderRadius: 30, elevation: 2, shadowColor: "black" }}>
+            <Image source={ GreenCoffee } />
+            <Text style={{ color: "#00582F", marginLeft: 5 }}>Cappucino</Text>
+          </TouchableOpacity>
+          {/* end menu */}
+
+
         </ScrollView>
       </View>
     </View>
