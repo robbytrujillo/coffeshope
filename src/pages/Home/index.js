@@ -37,42 +37,42 @@ const Home = () => {
       </View>
       {/* End Search */}
 
-      <View>
-        <View>
-          <Text>Categories</Text>
+      {/* Categories */}
+      <View style={{ marginLeft: 30, marginTop: 30 }}>
+        <View style={{ marginBottom: 15 }}>
+          <Text style={{ fontWeight: 500 }}>Categories</Text>
         </View>
-        <ScrollView horizontal={true}>
+        <ScrollView horizontal={true} showHorizontalScrollIndikcator={false}>
           {/* menu */}
-          <TouchableOpacity activeOpacity={0.7} style={{ backgroundColor: "#00582F", paddingVertical: 5, paddingHorizontal: 5, flexDirection: "row", alignItems: "center", borderRadius: 30, marginHorizontal: 10 }}>
+          <TouchableOpacity activeOpacity={0.7} style={{ backgroundColor: "#00582F", paddingVertical: 5, paddingHorizontal: 5, flexDirection: "row", alignItems: "center", borderRadius: 30, marginHorizontal: 5 }}>
             <Image source={Coffee} />
             <Text style={{ color: "white", marginLeft: 5 }}>Cappucino</Text>
           </TouchableOpacity>
           {/* end menu */}
 
           {/* menu */}
-          <TouchableOpacity activeOpacity={0.7} style={{ backgroundColor: "white", paddingVertical: 5, paddingHorizontal: 5, flexDirection: "row", alignItems: "center", borderRadius: 30, elevation: 2, shadowColor: "black" }}>
+          <TouchableOpacity activeOpacity={0.7} style={{ backgroundColor: "white", paddingVertical: 5, paddingHorizontal: 5, flexDirection: "row", alignItems: "center", borderRadius: 30, elevation: 2, shadowColor: "black", marginHorizontal: 5 }}>
             <Image source={ GreenCoffee } />
-            <Text style={{ color: "#00582F", marginLeft: 5 }}>Cappucino</Text>
+            <Text style={{ color: "#00582F", marginLeft: 5 }}>Coffe</Text>
           </TouchableOpacity>
           {/* end menu */}
           
           {/* menu */}
-          <TouchableOpacity activeOpacity={0.7} style={{ backgroundColor: "white", paddingVertical: 5, paddingHorizontal: 5, flexDirection: "row", alignItems: "center", borderRadius: 30, elevation: 2, shadowColor: "black" }}>
+          <TouchableOpacity activeOpacity={0.7} style={{ backgroundColor: "white", paddingVertical: 5, paddingHorizontal: 5, flexDirection: "row", alignItems: "center", borderRadius: 30, elevation: 2, shadowColor: "black", marginHorizontal: 5 }}>
             <Image source={ GreenCoffee } />
-            <Text style={{ color: "#00582F", marginLeft: 5 }}>Cappucino</Text>
+            <Text style={{ color: "#00582F", marginLeft: 5 }}>Expresso</Text>
           </TouchableOpacity>
           {/* end menu */}
           
           {/* menu */}
-          <TouchableOpacity activeOpacity={0.7} style={{ backgroundColor: "white", paddingVertical: 5, paddingHorizontal: 5, flexDirection: "row", alignItems: "center", borderRadius: 30, elevation: 2, shadowColor: "black" }}>
+          <TouchableOpacity activeOpacity={0.7} style={{ backgroundColor: "white", paddingVertical: 5, paddingHorizontal: 5, flexDirection: "row", alignItems: "center", borderRadius: 30, elevation: 2, shadowColor: "black", marginHorizontal: 5 }}>
             <Image source={ GreenCoffee } />
             <Text style={{ color: "#00582F", marginLeft: 5 }}>Cappucino</Text>
           </TouchableOpacity>
           {/* end menu */}
-
-
         </ScrollView>
       </View>
+      {/* End Categories */}
     </View>
   );
 };
