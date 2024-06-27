@@ -85,22 +85,22 @@ const Home = () => {
 
       {/* Product */}
       <ScrollView horizontal={true} showsHorizontalScrollIndicator={false}>
-        <View style={{ backgroundColor: "white", borderRadius: 20, paddingHorizontal: 5, paddingVertical: 5, elevation: 10, shadowColor: 'black' }}>
+        <TouchableOpacity activeOpacity={0.7} style={{ backgroundColor: "white", borderRadius: 20, paddingHorizontal: 5, paddingVertical: 5, elevation: 10, shadowColor: "black" }}>
           <Image source={PhotoCoffe} style={{ width: 144, height: 105, borderRadius: 20 }} />
           <View style={{ flexDirection: "row", justifyContent: "space-between" }}>
-            <View>
+            <View style={{ marginTop: 10 }}>
               <Text style={{ fontSize: 14, fontWeght: 500 }}>Cappuciono</Text>
               <Text style={{ fontSize: 10, marginTop: 5 }}>With Sugar</Text>
             </View>
-            <View>
+            <TouchableOpacity activeOpacity={0.7} style={{ marginTop: 10 }}>
               <Image source={FavoriteOff} />
-            </View>
+            </TouchableOpacity>
           </View>
-          <View style={{ flexDirection: 'row', justifyContent: 'space-berween', alignItems: 'center' }}>
+          <View style={{ flexDirection: "row", justifyContent: "space-berween", alignItems: "center" }}>
             <Text>Rp50.000</Text>
             <Image source={AddButton} />
           </View>
-        </View>
+        </TouchableOpacity>
       </ScrollView>
       {/* End Product */}
     </View>
