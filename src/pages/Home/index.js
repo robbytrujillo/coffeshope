@@ -84,20 +84,23 @@ const Home = () => {
       {/* End Categories */}
 
       {/* Product */}
-      <View>
-        <Image source={PhotoCoffe} style={{ width: 144, height: 105, borderRadius: 20 }} />
-        <View style={{ flexDirection: "row", justifyContent: "space-between" }}>
-          <Text>Cappuciono</Text>
-          <Text>With Sugar</Text>
+      <ScrollView>
+        <View style={{ backgroundColor: 'white' }}>
+          <Image source={PhotoCoffe} style={{ width: 144, height: 105, borderRadius: 20 }} />
+          <View style={{ flexDirection: "row", justifyContent: "space-between" }}>
+            <Text>Cappuciono</Text>
+            <Text>With Sugar</Text>
+          </View>
+
+          <View>
+            <Image source={FavoriteOff} />
+          </View>
+          <View>
+            <Text>Rp50.000</Text>
+            <Image source={AddButton} />
+          </View>
         </View>
-      </View>
-      <View>
-        <Image source={FavoriteOff} />
-      </View>
-      <View>
-        <Text>Rp50.000</Text>
-        <Image source={AddButton} />
-      </View>
+      </ScrollView>
       {/* End Product */}
     </View>
   );
